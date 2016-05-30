@@ -14,6 +14,11 @@
 		50D22D001CFBD9B80090EE8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50D22CFE1CFBD9B80090EE8E /* LaunchScreen.storyboard */; };
 		50D22D0B1CFBD9B80090EE8E /* PizzaPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D22D0A1CFBD9B80090EE8E /* PizzaPhoneTests.swift */; };
 		50D22D161CFBD9B80090EE8E /* PizzaPhoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D22D151CFBD9B80090EE8E /* PizzaPhoneUITests.swift */; };
+		50D22D261CFC1FEB0090EE8E /* ViewControllerTamano.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D22D251CFC1FEB0090EE8E /* ViewControllerTamano.swift */; };
+		50D22D281CFC2F0C0090EE8E /* ViewControllerMasa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D22D271CFC2F0C0090EE8E /* ViewControllerMasa.swift */; };
+		50D22D2A1CFC32200090EE8E /* ViewControllerQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D22D291CFC32200090EE8E /* ViewControllerQueso.swift */; };
+		50D22D2C1CFC35CF0090EE8E /* ViewControllerIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D22D2B1CFC35CF0090EE8E /* ViewControllerIngredientes.swift */; };
+		50D22D2E1CFC35E60090EE8E /* ViewControllerConfirmar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D22D2D1CFC35E60090EE8E /* ViewControllerConfirmar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		50D22D111CFBD9B80090EE8E /* PizzaPhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PizzaPhoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50D22D151CFBD9B80090EE8E /* PizzaPhoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaPhoneUITests.swift; sourceTree = "<group>"; };
 		50D22D171CFBD9B80090EE8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50D22D251CFC1FEB0090EE8E /* ViewControllerTamano.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTamano.swift; sourceTree = "<group>"; };
+		50D22D271CFC2F0C0090EE8E /* ViewControllerMasa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerMasa.swift; sourceTree = "<group>"; };
+		50D22D291CFC32200090EE8E /* ViewControllerQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerQueso.swift; sourceTree = "<group>"; };
+		50D22D2B1CFC35CF0090EE8E /* ViewControllerIngredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerIngredientes.swift; sourceTree = "<group>"; };
+		50D22D2D1CFC35E60090EE8E /* ViewControllerConfirmar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerConfirmar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 				50D22CFC1CFBD9B80090EE8E /* Assets.xcassets */,
 				50D22CFE1CFBD9B80090EE8E /* LaunchScreen.storyboard */,
 				50D22D011CFBD9B80090EE8E /* Info.plist */,
+				50D22D251CFC1FEB0090EE8E /* ViewControllerTamano.swift */,
+				50D22D271CFC2F0C0090EE8E /* ViewControllerMasa.swift */,
+				50D22D291CFC32200090EE8E /* ViewControllerQueso.swift */,
+				50D22D2B1CFC35CF0090EE8E /* ViewControllerIngredientes.swift */,
+				50D22D2D1CFC35E60090EE8E /* ViewControllerConfirmar.swift */,
 			);
 			path = PizzaPhone;
 			sourceTree = "<group>";
@@ -256,8 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50D22D281CFC2F0C0090EE8E /* ViewControllerMasa.swift in Sources */,
+				50D22D261CFC1FEB0090EE8E /* ViewControllerTamano.swift in Sources */,
+				50D22D2E1CFC35E60090EE8E /* ViewControllerConfirmar.swift in Sources */,
+				50D22D2C1CFC35CF0090EE8E /* ViewControllerIngredientes.swift in Sources */,
 				50D22CF81CFBD9B80090EE8E /* ViewController.swift in Sources */,
 				50D22CF61CFBD9B80090EE8E /* AppDelegate.swift in Sources */,
+				50D22D2A1CFC32200090EE8E /* ViewControllerQueso.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
