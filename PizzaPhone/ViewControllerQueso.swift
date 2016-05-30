@@ -10,7 +10,7 @@ import UIKit
 
 class ViewControllerQueso: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
-    var TipoQueso:[String]=["Mozarela", "Cheddar", "Parmesano", "Sin queso"]
+    var QuesoElejido:[String]=["Mozarela", "Cheddar", "Parmesano", "Sin queso"]
     var Tamano:String = ""
     
     var Masa:String = ""
@@ -45,12 +45,12 @@ class ViewControllerQueso: UIViewController, UIPickerViewDataSource, UIPickerVie
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return TipoQueso.count;
+        return QuesoElejido.count;
         
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String {
-        return TipoQueso[row]
+        return QuesoElejido[row]
         
     }
     
@@ -64,10 +64,10 @@ class ViewControllerQueso: UIViewController, UIPickerViewDataSource, UIPickerVie
        
         case 1 : cadenaResultante = "Chedar"
         case 2 : cadenaResultante = "Parmesano"
-        default : cadenaResultante="Sin queso"
+        default : cadenaResultante = "Sin queso"
         }
         IrIngredientes.enabled = true
-        mensaje(cadenaResultante)
+        //mensaje(cadenaResultante)
     }
     
     func mensaje (Texto: String) {
