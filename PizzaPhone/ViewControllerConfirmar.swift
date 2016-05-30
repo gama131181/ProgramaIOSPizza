@@ -42,7 +42,17 @@ class ViewControllerConfirmar: UIViewController {
     }
     
     @IBAction func Enviar(sender: AnyObject) {
-        mensaje("Desea enviar los ingredientes")
+        //mensaje("Desea enviar los ingredientes")
+    
+        let alert = UIAlertController(title: "UIAlertController", message: "Tus ingredientes son los correctos, envia a cocina", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        // add the actions (buttons)
+        alert.addAction(UIAlertAction(title: "Continua", style: UIAlertActionStyle.Default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Cancela", style: UIAlertActionStyle.Cancel, handler: nil))
+        
+        // show the alert
+        self.presentViewController(alert, animated: true, completion: nil)
+    
     }
     func mensaje (Texto: String) {
         let alertController = UIAlertController(title: "Pizza en Proceso", message:

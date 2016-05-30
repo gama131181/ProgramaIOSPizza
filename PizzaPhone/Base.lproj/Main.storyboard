@@ -615,53 +615,77 @@
                                     <action selector="AgregarJamon:" destination="EIS-9G-4wG" eventType="valueChanged" id="zof-Ef-Pxg"/>
                                 </connections>
                             </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="934-yd-mvN">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="202" y="188" width="51" height="31"/>
+                                </variation>
+                                <connections>
+                                    <action selector="AddPeperoni:" destination="UvG-kf-nXv" eventType="valueChanged" id="ZwY-ZI-mAq"/>
+                                </connections>
+                            </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KM5-i5-wYo">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="202" y="227" width="51" height="31"/>
                                 </variation>
+                                <connections>
+                                    <action selector="AddPavo:" destination="UvG-kf-nXv" eventType="valueChanged" id="lUl-k3-qXJ"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nyj-WU-3tH">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="202" y="266" width="51" height="31"/>
                                 </variation>
+                                <connections>
+                                    <action selector="AddSalchicha:" destination="UvG-kf-nXv" eventType="valueChanged" id="k08-X6-5Tc"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C36-dc-Tga">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="202" y="305" width="51" height="31"/>
                                 </variation>
+                                <connections>
+                                    <action selector="AddAcituna:" destination="UvG-kf-nXv" eventType="valueChanged" id="C36-SG-WnM"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="R1e-ZC-o3y">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="202" y="348" width="51" height="31"/>
                                 </variation>
+                                <connections>
+                                    <action selector="AddCebolla:" destination="UvG-kf-nXv" eventType="valueChanged" id="Ax2-cv-TpO"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UR3-Hf-eC5">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="202" y="388" width="51" height="31"/>
                                 </variation>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r45-Jd-ZTt">
-                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="202" y="427" width="51" height="31"/>
-                                </variation>
+                                <connections>
+                                    <action selector="AddPimiento:" destination="UvG-kf-nXv" eventType="valueChanged" id="5NI-9K-v26"/>
+                                </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iIq-jP-nJQ">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="202" y="472" width="51" height="31"/>
                                 </variation>
+                                <connections>
+                                    <action selector="AddAnchoa:" destination="UvG-kf-nXv" eventType="valueChanged" id="p7c-SA-Hez"/>
+                                </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="934-yd-mvN">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r45-Jd-ZTt">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="202" y="188" width="51" height="31"/>
+                                    <rect key="frame" x="202" y="427" width="51" height="31"/>
                                 </variation>
+                                <connections>
+                                    <action selector="AddPina:" destination="UvG-kf-nXv" eventType="valueChanged" id="tzJ-zt-OWH"/>
+                                </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -679,14 +703,14 @@
                                 <exclude reference="3u2-tO-BVE"/>
                                 <exclude reference="RKD-De-NLf"/>
                                 <exclude reference="SWq-ET-f0T"/>
+                                <exclude reference="934-yd-mvN"/>
                                 <exclude reference="KM5-i5-wYo"/>
                                 <exclude reference="Nyj-WU-3tH"/>
                                 <exclude reference="C36-dc-Tga"/>
                                 <exclude reference="R1e-ZC-o3y"/>
                                 <exclude reference="UR3-Hf-eC5"/>
-                                <exclude reference="r45-Jd-ZTt"/>
                                 <exclude reference="iIq-jP-nJQ"/>
-                                <exclude reference="934-yd-mvN"/>
+                                <exclude reference="r45-Jd-ZTt"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -703,20 +727,28 @@
                                 <include reference="3u2-tO-BVE"/>
                                 <include reference="RKD-De-NLf"/>
                                 <include reference="SWq-ET-f0T"/>
+                                <include reference="934-yd-mvN"/>
                                 <include reference="KM5-i5-wYo"/>
                                 <include reference="Nyj-WU-3tH"/>
                                 <include reference="C36-dc-Tga"/>
                                 <include reference="R1e-ZC-o3y"/>
                                 <include reference="UR3-Hf-eC5"/>
-                                <include reference="r45-Jd-ZTt"/>
                                 <include reference="iIq-jP-nJQ"/>
-                                <include reference="934-yd-mvN"/>
+                                <include reference="r45-Jd-ZTt"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="ConfirmarPedido" destination="HIW-Wy-Xvn" id="RUG-LJ-1sn"/>
+                        <outlet property="ingredienteAceituna" destination="C36-dc-Tga" id="2Nd-oN-ONS"/>
+                        <outlet property="ingredienteAchoa" destination="iIq-jP-nJQ" id="DQx-As-nPU"/>
+                        <outlet property="ingredienteCebolla" destination="R1e-ZC-o3y" id="oMF-yT-Isg"/>
                         <outlet property="ingredienteJamon" destination="SWq-ET-f0T" id="go7-ls-ntN"/>
+                        <outlet property="ingredientePavo" destination="KM5-i5-wYo" id="iOx-li-H8l"/>
+                        <outlet property="ingredientePeperoni" destination="934-yd-mvN" id="xZb-3j-gsx"/>
+                        <outlet property="ingredientePimiento" destination="UR3-Hf-eC5" id="En1-Ad-HZr"/>
+                        <outlet property="ingredientePina" destination="r45-Jd-ZTt" id="VwI-Np-WYZ"/>
+                        <outlet property="ingredienteSalchicha" destination="Nyj-WU-3tH" id="tsa-DM-Wg0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBh-vd-Xvn" userLabel="First Responder" sceneMemberID="firstResponder"/>

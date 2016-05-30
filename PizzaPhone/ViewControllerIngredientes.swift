@@ -75,7 +75,11 @@ class ViewControllerIngredientes: UIViewController {
         if ingredienteJamon.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Jamon")
-                mensaje("Se agrego Jamon")
+            }
+            else
+            {
+                ingredienteJamon.on = false
+                mensaje("Ya no se pueden agregar mas ingredientes")
             }
             
         }
@@ -83,8 +87,8 @@ class ViewControllerIngredientes: UIViewController {
         {
             if Ingredientes.contains("Jamon"){
                 Ingredientes.remove("Jamon")
-                mensaje("Se quito el Jamon")
             }
+            
             
         }
 
@@ -95,15 +99,17 @@ class ViewControllerIngredientes: UIViewController {
         if ingredientePeperoni.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Peperoni")
-                mensaje("Se agrego")
             }
-            
+            else
+            {
+                ingredientePeperoni.on = false
+                mensaje("Ya no se pueden agregar mas ingredientes")
+            }
         }
         else
         {
             if Ingredientes.contains("Peperoni"){
                 Ingredientes.remove("Peperoni")
-                mensaje("Se quito")
             }
             
         }
@@ -115,7 +121,11 @@ class ViewControllerIngredientes: UIViewController {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Pavo")
             }
-            
+            else
+            {
+                ingredientePavo.on = false
+                mensaje("Ya no se pueden agregar mas ingredientes")
+            }
         }
         else
         {
@@ -132,7 +142,11 @@ class ViewControllerIngredientes: UIViewController {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Salchicha")
             }
-            
+            else
+            {
+                ingredienteSalchicha.on = false
+                mensaje("Ya no se pueden agregar mas ingredientes")
+            }
         }
         else
         {
@@ -149,7 +163,11 @@ class ViewControllerIngredientes: UIViewController {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Aceituna")
             }
-            
+            else
+            {
+                ingredienteAceituna.on = false
+                mensaje("Ya no se pueden agregar mas ingredientes")
+            }
         }
         else
         {
@@ -166,7 +184,11 @@ class ViewControllerIngredientes: UIViewController {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Cebolla")
             }
-            
+            else
+            {
+                ingredienteCebolla.on = false
+                mensaje("Ya no se pueden agregar mas ingredientes")
+            }
         }
         else
         {
@@ -183,7 +205,11 @@ class ViewControllerIngredientes: UIViewController {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Pimiento")
             }
-            
+            else
+            {
+                ingredientePimiento.on = false
+                mensaje("Ya no se pueden agregar mas ingredientes")
+            }
         }
         else
         {
@@ -200,7 +226,11 @@ class ViewControllerIngredientes: UIViewController {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Piña")
             }
-            
+            else
+            {
+                ingredientePina.on = false
+                mensaje("Ya no se pueden agregar mas ingredientes")
+            }
         }
         else
         {
@@ -218,7 +248,11 @@ class ViewControllerIngredientes: UIViewController {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Anchoa")
             }
-            
+            else
+            {
+                ingredienteAchoa.on = false
+                mensaje("Ya no se pueden agregar mas ingredientes")
+            }
         }
         else
         {
@@ -231,9 +265,11 @@ class ViewControllerIngredientes: UIViewController {
     }
     
     func mensaje (Texto: String) {
-        let alertController = UIAlertController(title: "El tamaño elegido es", message:
-            Texto, preferredStyle: UIAlertControllerStyle.Alert)
-        alertController.addAction(UIAlertAction(title: "Cerrar", style: UIAlertActionStyle.Default,handler: nil))
+        let alertController = UIAlertController(title: "Idvertencia",
+                                                message:Texto,
+                                                preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Cerrar",
+                                                style: UIAlertActionStyle.Default,handler: nil))
         
         self.presentViewController(alertController, animated: true, completion: nil)
     }
