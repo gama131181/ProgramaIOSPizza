@@ -16,18 +16,23 @@ class ViewControllerIngredientes: UIViewController {
     var Ingredientes:Set<String> = []
 
     
-    @IBOutlet weak var ingredienteJamon: UISwitch!
-    @IBOutlet weak var ingredientePeperoni: UISwitch!
-    @IBOutlet weak var ingredientePavo: UISwitch!
-    @IBOutlet weak var ingredienteSalchicha: UISwitch!
-    @IBOutlet weak var ingredienteAceituna: UISwitch!
-    @IBOutlet weak var ingredienteCebolla: UISwitch!
+    @IBOutlet weak var ingredienteAchoa: UISwitch!
+    @IBOutlet weak var ingredientePina: UISwitch!
     @IBOutlet weak var ingredientePimiento: UISwitch!
-    @IBOutlet weak var ingredientePiña: UISwitch!
-    @IBOutlet weak var ingredienteAnchoa: UISwitch!
+    @IBOutlet weak var ingredienteCebolla: UISwitch!
+    @IBOutlet weak var ingredienteAceituna: UISwitch!
+    
+    @IBOutlet weak var ingredienteJamon: UISwitch!
+    
+    @IBOutlet weak var ingredientePeperoni: UISwitch!
 
     
+    @IBOutlet weak var ingredientePavo: UISwitch!
+    
+    @IBOutlet weak var ingredienteSalchicha: UISwitch!
+    
     @IBOutlet weak var ConfirmarPedido: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -65,26 +70,28 @@ class ViewControllerIngredientes: UIViewController {
     
     
     
-    @IBAction func AgregarJamon(sender: AnyObject) {
+    @IBAction func AgregaJamon(sender: AnyObject) {
+        ConfirmarPedido.enabled=true
         if ingredienteJamon.on == true {
             if Ingredientes.count < 5 {
-                 Ingredientes.insert("Jamon")
+                Ingredientes.insert("Jamon")
+                mensaje("Se agrego Jamon")
             }
-           
+            
         }
         else
         {
             if Ingredientes.contains("Jamon"){
-                 Ingredientes.remove("Jamon")
+                Ingredientes.remove("Jamon")
+                mensaje("Se quito el Jamon")
             }
-        
+            
         }
-        
+
     }
     
     
-    @IBAction func AgregaPeperoni(sender: AnyObject) {
-        
+    @IBAction func AddPeperoni(sender: AnyObject) {
         if ingredientePeperoni.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Peperoni")
@@ -99,9 +106,9 @@ class ViewControllerIngredientes: UIViewController {
             
         }
     }
-
     
-    @IBAction func AgregaPavo(sender: AnyObject) {
+   
+    @IBAction func AddPavo(sender: AnyObject) {
         if ingredientePavo.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Pavo")
@@ -115,10 +122,10 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
-
     }
     
-    @IBAction func AgregaSalchicha(sender: AnyObject) {
+    
+    @IBAction func AddSalchicha(sender: AnyObject) {
         if ingredienteSalchicha.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Salchicha")
@@ -132,11 +139,10 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
-
     }
     
     
-    @IBAction func AgregaAceituna(sender: AnyObject) {
+    @IBAction func AddAcituna(sender: AnyObject) {
         if ingredienteAceituna.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Aceituna")
@@ -150,10 +156,10 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
-
     }
     
-    @IBAction func AgregaCebolla(sender: AnyObject) {
+   
+    @IBAction func AddCebolla(sender: AnyObject) {
         if ingredienteCebolla.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Cebolla")
@@ -167,11 +173,10 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
-
     }
     
     
-    @IBAction func AgregaPimiento(sender: AnyObject) {
+    @IBAction func AddPimiento(sender: AnyObject) {
         if ingredientePimiento.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Pimiento")
@@ -185,11 +190,11 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
-    
     }
     
-    @IBAction func AgregaPiña(sender: AnyObject) {
-        if ingredientePiña.on == true {
+    
+    @IBAction func AddPina(sender: AnyObject) {
+        if ingredientePina.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Piña")
             }
@@ -202,11 +207,12 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
-
     }
     
-    @IBAction func AgregaAnchoa(sender: AnyObject) {
-        if ingredienteAnchoa.on == true {
+    
+  
+    @IBAction func AddAnchoa(sender: AnyObject) {
+        if ingredienteAchoa.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Anchoa")
             }
@@ -221,6 +227,15 @@ class ViewControllerIngredientes: UIViewController {
         }
 
     }
+    
+    func mensaje (Texto: String) {
+        let alertController = UIAlertController(title: "El tamaño elegido es", message:
+            Texto, preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Cerrar", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+
     
     /*
     @IBOutlet weak var AgregaAnchoa: UISwitch!

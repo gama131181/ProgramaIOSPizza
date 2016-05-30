@@ -61,7 +61,6 @@ class ViewControllerQueso: UIViewController, UIPickerViewDataSource, UIPickerVie
     {
         switch row {
         case 0 : cadenaResultante = "Mozarela"
-       
         case 1 : cadenaResultante = "Chedar"
         case 2 : cadenaResultante = "Parmesano"
         default : cadenaResultante = "Sin queso"

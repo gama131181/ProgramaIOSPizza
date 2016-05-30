@@ -15,21 +15,25 @@ class ViewControllerConfirmar: UIViewController {
     var Queso:String = ""
     var Ingredientes:String = ""
     
-    @IBOutlet weak var confirmaTamaño: UITextField!
+    @IBOutlet weak var confirmaTamano: UITextField!
     
     @IBOutlet weak var confirmaMasa: UITextField!
-  
-    @IBOutlet weak var confirmaIngredientes: UITextView!
     
     @IBOutlet weak var confirmaQueso: UITextField!
     
+    @IBOutlet weak var confirmaIngredientes: UITextView!
+    
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.confirmaTamaño.text = Tamano
+        self.confirmaTamano.text = Tamano
         self.confirmaMasa.text = Masa
         self.confirmaQueso.text = Queso
         self.confirmaIngredientes.text = Ingredientes
         // Do any additional setup after loading the view.
+        //self.confirmaIngredientes.text="Jamon, Queso"
     }
 
     override func didReceiveMemoryWarning() {
