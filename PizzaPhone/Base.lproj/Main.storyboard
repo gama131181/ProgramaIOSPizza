@@ -346,7 +346,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="EIS-9G-4wG" kind="show" id="ocV-fF-ApT"/>
+                                    <segue destination="EIS-9G-4wG" kind="show" id="ELX-Rw-UKy"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J1U-YC-B75">
@@ -502,50 +502,50 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="934-yd-mvN">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SWq-ET-f0T">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <connections>
+                                    <action selector="AgregarJamon:" destination="EIS-9G-4wG" eventType="valueChanged" id="zof-Ef-Pxg"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="934-yd-mvN">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <connections>
                                     <action selector="AgregaPeperoni:" destination="EIS-9G-4wG" eventType="valueChanged" id="p4G-zU-rm9"/>
                                     <action selector="AgregarJamon:" destination="EIS-9G-4wG" eventType="valueChanged" id="hge-e7-U9N"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KM5-i5-wYo">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KM5-i5-wYo">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <connections>
                                     <action selector="AgregaPavo:" destination="EIS-9G-4wG" eventType="valueChanged" id="6cd-3U-9e8"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nyj-WU-3tH">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Nyj-WU-3tH">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <connections>
                                     <action selector="AgregaSalchicha:" destination="EIS-9G-4wG" eventType="valueChanged" id="EeX-P7-WVC"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C36-dc-Tga">
-                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
-                                <connections>
-                                    <action selector="AgregaAceituna:" destination="EIS-9G-4wG" eventType="valueChanged" id="7PA-DH-GHJ"/>
-                                </connections>
-                            </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R1e-ZC-o3y">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="R1e-ZC-o3y">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <connections>
                                     <action selector="AgregaCebolla:" destination="EIS-9G-4wG" eventType="valueChanged" id="pDK-vd-PZY"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UR3-Hf-eC5">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UR3-Hf-eC5">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <connections>
                                     <action selector="AgregaPimiento:" destination="EIS-9G-4wG" eventType="valueChanged" id="cyU-Wh-JB4"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r45-Jd-ZTt">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r45-Jd-ZTt">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <connections>
                                     <action selector="AgregaPiña:" destination="EIS-9G-4wG" eventType="valueChanged" id="h2X-Y7-YCw"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iIq-jP-nJQ">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iIq-jP-nJQ">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <connections>
                                     <action selector="AgregaAnchoa:" destination="EIS-9G-4wG" eventType="valueChanged" id="fAg-s1-YIM"/>
@@ -555,13 +555,13 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Ratificar pedido"/>
                                 <connections>
-                                    <segue destination="gAN-P2-DMF" kind="show" id="L8u-kF-dvp"/>
+                                    <segue destination="gAN-P2-DMF" kind="show" id="etm-B5-C5V"/>
                                 </connections>
                             </button>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SWq-ET-f0T">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C36-dc-Tga">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <connections>
-                                    <action selector="AgregarJamon:" destination="EIS-9G-4wG" eventType="valueChanged" id="zof-Ef-Pxg"/>
+                                    <action selector="AgregaAceituna:" destination="EIS-9G-4wG" eventType="valueChanged" id="7PA-DH-GHJ"/>
                                 </connections>
                             </switch>
                         </subviews>
@@ -622,16 +622,16 @@
                                 <exclude reference="m1x-HD-7FS"/>
                                 <exclude reference="3u2-tO-BVE"/>
                                 <exclude reference="RKD-De-NLf"/>
+                                <exclude reference="SWq-ET-f0T"/>
                                 <exclude reference="934-yd-mvN"/>
                                 <exclude reference="KM5-i5-wYo"/>
                                 <exclude reference="Nyj-WU-3tH"/>
-                                <exclude reference="C36-dc-Tga"/>
                                 <exclude reference="R1e-ZC-o3y"/>
                                 <exclude reference="UR3-Hf-eC5"/>
                                 <exclude reference="r45-Jd-ZTt"/>
                                 <exclude reference="iIq-jP-nJQ"/>
                                 <exclude reference="mhL-eM-FTR"/>
-                                <exclude reference="SWq-ET-f0T"/>
+                                <exclude reference="C36-dc-Tga"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="DWi-xP-XH8"/>
@@ -688,16 +688,16 @@
                                 <include reference="m1x-HD-7FS"/>
                                 <include reference="3u2-tO-BVE"/>
                                 <include reference="RKD-De-NLf"/>
+                                <include reference="SWq-ET-f0T"/>
                                 <include reference="934-yd-mvN"/>
                                 <include reference="KM5-i5-wYo"/>
                                 <include reference="Nyj-WU-3tH"/>
-                                <include reference="C36-dc-Tga"/>
                                 <include reference="R1e-ZC-o3y"/>
                                 <include reference="UR3-Hf-eC5"/>
                                 <include reference="r45-Jd-ZTt"/>
                                 <include reference="iIq-jP-nJQ"/>
                                 <include reference="mhL-eM-FTR"/>
-                                <include reference="SWq-ET-f0T"/>
+                                <include reference="C36-dc-Tga"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="DWi-xP-XH8"/>
