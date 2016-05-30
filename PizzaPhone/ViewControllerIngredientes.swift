@@ -95,6 +95,7 @@ class ViewControllerIngredientes: UIViewController {
         if ingredientePeperoni.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Peperoni")
+                mensaje("Se agrego")
             }
             
         }
@@ -102,6 +103,7 @@ class ViewControllerIngredientes: UIViewController {
         {
             if Ingredientes.contains("Peperoni"){
                 Ingredientes.remove("Peperoni")
+                mensaje("Se quito")
             }
             
         }

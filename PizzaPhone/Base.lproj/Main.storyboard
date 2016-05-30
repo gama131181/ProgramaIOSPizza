@@ -488,7 +488,6 @@
                     <connections>
                         <outlet property="ConfirmarPedido" destination="mhL-eM-FTR" id="Vg6-Am-sbO"/>
                         <outlet property="ingredienteJamon" destination="SWq-ET-f0T" id="UW2-kP-5aW"/>
-                        <outlet property="ingredientePeperoni" destination="934-yd-mvN" id="Ya4-8V-tfr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59Q-jU-Ill" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -616,17 +615,6 @@
                                     <action selector="AgregarJamon:" destination="EIS-9G-4wG" eventType="valueChanged" id="zof-Ef-Pxg"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="934-yd-mvN">
-                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="202" y="190" width="51" height="31"/>
-                                </variation>
-                                <connections>
-                                    <action selector="AddPeperoni:" destination="UvG-kf-nXv" eventType="valueChanged" id="2s6-lU-Tqz"/>
-                                    <action selector="AgregaPeperoni:" destination="EIS-9G-4wG" eventType="valueChanged" id="p4G-zU-rm9"/>
-                                    <action selector="AgregarJamon:" destination="EIS-9G-4wG" eventType="valueChanged" id="hge-e7-U9N"/>
-                                </connections>
-                            </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KM5-i5-wYo">
                                 <rect key="frame" x="-25" y="-15" width="51" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -669,6 +657,12 @@
                                     <rect key="frame" x="202" y="472" width="51" height="31"/>
                                 </variation>
                             </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="934-yd-mvN">
+                                <rect key="frame" x="-25" y="-15" width="51" height="31"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="202" y="188" width="51" height="31"/>
+                                </variation>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -685,7 +679,6 @@
                                 <exclude reference="3u2-tO-BVE"/>
                                 <exclude reference="RKD-De-NLf"/>
                                 <exclude reference="SWq-ET-f0T"/>
-                                <exclude reference="934-yd-mvN"/>
                                 <exclude reference="KM5-i5-wYo"/>
                                 <exclude reference="Nyj-WU-3tH"/>
                                 <exclude reference="C36-dc-Tga"/>
@@ -693,6 +686,7 @@
                                 <exclude reference="UR3-Hf-eC5"/>
                                 <exclude reference="r45-Jd-ZTt"/>
                                 <exclude reference="iIq-jP-nJQ"/>
+                                <exclude reference="934-yd-mvN"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -709,7 +703,6 @@
                                 <include reference="3u2-tO-BVE"/>
                                 <include reference="RKD-De-NLf"/>
                                 <include reference="SWq-ET-f0T"/>
-                                <include reference="934-yd-mvN"/>
                                 <include reference="KM5-i5-wYo"/>
                                 <include reference="Nyj-WU-3tH"/>
                                 <include reference="C36-dc-Tga"/>
@@ -717,14 +710,13 @@
                                 <include reference="UR3-Hf-eC5"/>
                                 <include reference="r45-Jd-ZTt"/>
                                 <include reference="iIq-jP-nJQ"/>
+                                <include reference="934-yd-mvN"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="AddPeperoni" destination="934-yd-mvN" id="qXF-Kc-4zF"/>
                         <outlet property="ConfirmarPedido" destination="HIW-Wy-Xvn" id="RUG-LJ-1sn"/>
                         <outlet property="ingredienteJamon" destination="SWq-ET-f0T" id="go7-ls-ntN"/>
-                        <outlet property="ingredientePeperoni" destination="934-yd-mvN" id="Ont-It-4nO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBh-vd-Xvn" userLabel="First Responder" sceneMemberID="firstResponder"/>
