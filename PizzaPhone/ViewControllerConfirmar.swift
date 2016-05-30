@@ -25,10 +25,10 @@ class ViewControllerConfirmar: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.confirmaTamaño.text=Tamano
-        self.confirmaMasa.text=Masa
-        self.confirmaQueso.text=Queso
-        self.confirmaIngredientes.text=Ingredientes
+        self.confirmaTamaño.text = Tamano
+        self.confirmaMasa.text = Masa
+        self.confirmaQueso.text = Queso
+        self.confirmaIngredientes.text = Ingredientes
         // Do any additional setup after loading the view.
     }
 
