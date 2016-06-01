@@ -71,7 +71,8 @@ class ViewControllerIngredientes: UIViewController {
     
     
     @IBAction func AgregaJamon(sender: AnyObject) {
-        ConfirmarPedido.enabled=true
+        
+
         if ingredienteJamon.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Jamon")
@@ -91,11 +92,14 @@ class ViewControllerIngredientes: UIViewController {
             
             
         }
+        verificarIngredientes()
+
 
     }
     
     
     @IBAction func AddPeperoni(sender: AnyObject) {
+        
         if ingredientePeperoni.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Peperoni")
@@ -113,10 +117,13 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
+        verificarIngredientes()
+
     }
     
    
     @IBAction func AddPavo(sender: AnyObject) {
+
         if ingredientePavo.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Pavo")
@@ -134,10 +141,11 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
-    }
+       verificarIngredientes()    }
     
     
     @IBAction func AddSalchicha(sender: AnyObject) {
+        
         if ingredienteSalchicha.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Salchicha")
@@ -155,11 +163,12 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
+       verificarIngredientes()
     }
     
     
     @IBAction func AddAcituna(sender: AnyObject) {
-        if ingredienteAceituna.on == true {
+              if ingredienteAceituna.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Aceituna")
             }
@@ -176,10 +185,13 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
+       verificarIngredientes()
+
     }
     
    
     @IBAction func AddCebolla(sender: AnyObject) {
+        
         if ingredienteCebolla.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Cebolla")
@@ -197,10 +209,13 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
+       verificarIngredientes()
     }
     
     
     @IBAction func AddPimiento(sender: AnyObject) {
+        
+
         if ingredientePimiento.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Pimiento")
@@ -218,10 +233,12 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
+       verificarIngredientes()
     }
     
     
     @IBAction func AddPina(sender: AnyObject) {
+       
         if ingredientePina.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Piña")
@@ -239,11 +256,13 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
+      verificarIngredientes()
     }
     
     
   
     @IBAction func AddAnchoa(sender: AnyObject) {
+        
         if ingredienteAchoa.on == true {
             if Ingredientes.count < 5 {
                 Ingredientes.insert("Anchoa")
@@ -261,11 +280,18 @@ class ViewControllerIngredientes: UIViewController {
             }
             
         }
-
+        
+       verificarIngredientes()
     }
     
+    func verificarIngredientes()
+    {
+        if Ingredientes.count > 0 {ConfirmarPedido.enabled=true}
+        else {ConfirmarPedido.enabled=false}
+
+    }
     func mensaje (Texto: String) {
-        let alertController = UIAlertController(title: "Idvertencia",
+        let alertController = UIAlertController(title: "Advertencia",
                                                 message:Texto,
                                                 preferredStyle: UIAlertControllerStyle.Alert)
         alertController.addAction(UIAlertAction(title: "Cerrar",

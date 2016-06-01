@@ -36,24 +36,45 @@ class ViewControllerConfirmar: UIViewController {
         //self.confirmaIngredientes.text="Jamon, Queso"
     }
 
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let inicioMenu=segue.destinationViewController as!ViewController
+        inicioMenu.confimacion = true
+        //mensaje("Gracias! Su pedido sera entregado entre 10 a 15 minutos\nOtro pedido, vuelva a ordenar")
+    }
+
+    func mensajeFin (Texto: String) {
+        let alertController = UIAlertController(title: "Pizza en Proceso", message:
+            Texto, preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.Default,handler: nil))
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     @IBAction func Enviar(sender: AnyObject) {
-        //mensaje("Desea enviar los ingredientes")
+             mensajeEnvio("Tus ingredientes son los correctos")
+    }
     
-        let alert = UIAlertController(title: "UIAlertController", message: "Tus ingredientes son los correctos, envia a cocina", preferredStyle: UIAlertControllerStyle.Alert)
+    func mensajeEnvio(Cadena:String)
+    {
         
-        // add the actions (buttons)
-        alert.addAction(UIAlertAction(title: "Continua", style: UIAlertActionStyle.Default, handler: nil))
+        let alert = UIAlertController(title: "Confirma ingredientes", message: Cadena, preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "Continua",style: UIAlertActionStyle.Default, handler:{(_)in self.performSegueWithIdentifier("regresaInicioSeleccion", sender: self) }))
         alert.addAction(UIAlertAction(title: "Cancela", style: UIAlertActionStyle.Cancel, handler: nil))
         
-        // show the alert
+     
         self.presentViewController(alert, animated: true, completion: nil)
+       
     
     }
+    
     func mensaje (Texto: String) {
         let alertController = UIAlertController(title: "Pizza en Proceso", message:
             Texto, preferredStyle: UIAlertControllerStyle.Alert)

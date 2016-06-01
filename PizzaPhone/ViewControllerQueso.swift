@@ -15,7 +15,7 @@ class ViewControllerQueso: UIViewController, UIPickerViewDataSource, UIPickerVie
     
     var Masa:String = ""
     
-    var cadenaResultante:String = ""
+    var cadenaResultante:String = "Mozarela"
     
     @IBOutlet weak var PickerQueso: UIPickerView!
     @IBOutlet weak var IrIngredientes: UIButton!
@@ -23,7 +23,7 @@ class ViewControllerQueso: UIViewController, UIPickerViewDataSource, UIPickerVie
         super.viewDidLoad()
         self.PickerQueso.dataSource=self
         self.PickerQueso.delegate=self
-        IrIngredientes.enabled=false
+       // IrIngredientes.enabled=false
         // Do any additional setup after loading the view.
     }
 
@@ -65,7 +65,7 @@ class ViewControllerQueso: UIViewController, UIPickerViewDataSource, UIPickerVie
         case 2 : cadenaResultante = "Parmesano"
         default : cadenaResultante = "Sin queso"
         }
-        IrIngredientes.enabled = true
+        //IrIngredientes.enabled = true
         //mensaje(cadenaResultante)
     }
     

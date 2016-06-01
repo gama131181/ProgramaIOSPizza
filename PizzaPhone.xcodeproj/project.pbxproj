@@ -19,6 +19,7 @@
 		50D22D2A1CFC32200090EE8E /* ViewControllerQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D22D291CFC32200090EE8E /* ViewControllerQueso.swift */; };
 		50D22D2C1CFC35CF0090EE8E /* ViewControllerIngredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D22D2B1CFC35CF0090EE8E /* ViewControllerIngredientes.swift */; };
 		50D22D2E1CFC35E60090EE8E /* ViewControllerConfirmar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D22D2D1CFC35E60090EE8E /* ViewControllerConfirmar.swift */; };
+		50EC5D6E1CFDD81900E846D2 /* icono.png in Resources */ = {isa = PBXBuildFile; fileRef = 50EC5D6D1CFDD81900E846D2 /* icono.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		50D22D291CFC32200090EE8E /* ViewControllerQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerQueso.swift; sourceTree = "<group>"; };
 		50D22D2B1CFC35CF0090EE8E /* ViewControllerIngredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerIngredientes.swift; sourceTree = "<group>"; };
 		50D22D2D1CFC35E60090EE8E /* ViewControllerConfirmar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerConfirmar.swift; sourceTree = "<group>"; };
+		50EC5D6D1CFDD81900E846D2 /* icono.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icono.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		50D22CE91CFBD9B80090EE8E = {
 			isa = PBXGroup;
 			children = (
+				50EC5D6C1CFDD7C000E846D2 /* Iconos */,
 				50D22CF41CFBD9B80090EE8E /* PizzaPhone */,
 				50D22D091CFBD9B80090EE8E /* PizzaPhoneTests */,
 				50D22D141CFBD9B80090EE8E /* PizzaPhoneUITests */,
@@ -138,6 +141,14 @@
 				50D22D171CFBD9B80090EE8E /* Info.plist */,
 			);
 			path = PizzaPhoneUITests;
+			sourceTree = "<group>";
+		};
+		50EC5D6C1CFDD7C000E846D2 /* Iconos */ = {
+			isa = PBXGroup;
+			children = (
+				50EC5D6D1CFDD81900E846D2 /* icono.png */,
+			);
+			name = Iconos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,6 +257,7 @@
 			files = (
 				50D22D001CFBD9B80090EE8E /* LaunchScreen.storyboard in Resources */,
 				50D22CFD1CFBD9B80090EE8E /* Assets.xcassets in Resources */,
+				50EC5D6E1CFDD81900E846D2 /* icono.png in Resources */,
 				50D22CFB1CFBD9B80090EE8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +516,7 @@
 				50D22D1C1CFBD9B80090EE8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50D22D1D1CFBD9B80090EE8E /* Build configuration list for PBXNativeTarget "PizzaPhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +525,7 @@
 				50D22D1F1CFBD9B80090EE8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50D22D201CFBD9B80090EE8E /* Build configuration list for PBXNativeTarget "PizzaPhoneUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +534,7 @@
 				50D22D221CFBD9B80090EE8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,7 +13,7 @@ class ViewControllerMasa: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     
     var Masa:[String]=["Delgada", "Crujiente", "Gruesa"]
     var tamano:String = ""
-    var cadenaResultante = ""
+    var cadenaResultante = "Delgada"
     @IBOutlet weak var TipoMasa: UIPickerView!
     
     @IBOutlet weak var IrQueso: UIButton!
@@ -22,7 +22,7 @@ class ViewControllerMasa: UIViewController, UIPickerViewDelegate, UIPickerViewDa
         super.viewDidLoad()
         self.TipoMasa.dataSource = self;
         self.TipoMasa.delegate = self;
-        IrQueso.enabled=false
+        //IrQueso.enabled=false
         // Do any additional setup after loading the view.
     }
 
@@ -58,12 +58,11 @@ class ViewControllerMasa: UIViewController, UIPickerViewDelegate, UIPickerViewDa
     {
         switch row {
         case 0 : cadenaResultante = "Delgada"
-            
         case 1 : cadenaResultante = "Crujiente"
         default : cadenaResultante="Gruesa"
         }
-        mensaje(cadenaResultante)
-        IrQueso.enabled = true
+       // mensaje(cadenaResultante)
+        //IrQueso.enabled = true
 
 }
     
